@@ -1,0 +1,46 @@
+.bg-black {
+  background-color: #000;
+}
+
+.bg-black-80 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  border-width: 3px !important;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.navbar .nav-link:hover {
+  color: #874ebf !important;
+}
+
+#showcase {
+  position: relative;
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (min-height: 1024px) {
+  #showcase {
+    min-height: 50vh;
+  }
+}
+
+#showcase:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/circuit-bg.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */
