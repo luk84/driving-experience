@@ -42,3 +42,28 @@
     z-index: -1;
   }
 }
+
+.testimonial-image {
+  margin-top: -4.5rem !important;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  justify-content: center;
+}
+.back-stars {
+  position: relative;
+  display: flex;
+  margin: 0.5rem;
+  color: var(--dark);
+}
+.front-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  color: $warning;
+  overflow: hidden;
+}
