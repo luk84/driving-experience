@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap_boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass src/scss/ -o src/css/ --source-map=true --output-style=expanded",
+    "prefix": "postcss src/css/style.css -o src/css/style.css --use=autoprefixer --map=false",
+    "sass-prefix": "npm run sass && npm run prefix",
+    "start": "onchange 'src/scss/**/*.scss' -- npm run sass-prefix"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "node-sass": "^4.12.0",
+    "onchange": "^6.0.0",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
