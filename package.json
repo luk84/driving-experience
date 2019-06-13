@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass src/scss/ -o src/css/ --source-map=true --output-style=expanded",
-    "prefix": "postcss src/css/style.css -o src/css/style.css --use=autoprefixer --map=false",
+    "sass": "node-sass scss/ -o dist/css/ --source-map=true --output-style=compressed",
+    "prefix": "postcss dist/css/style.css -o dist/css/style.css --use=autoprefixer --map=false",
     "sass-prefix": "npm run sass && npm run prefix",
-    "start": "onchange 'src/scss/**/*.scss' -- npm run sass-prefix"
+    "start": "onchange 'scss/**/*.scss' -- npm run sass-prefix"
   },
   "browserslist": [
     "last 2 versions"
