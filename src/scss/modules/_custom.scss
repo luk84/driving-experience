@@ -67,3 +67,24 @@
   color: $warning;
   overflow: hidden;
 }
+
+// #carCard {
+//   transition: 2s;
+
+//   &.active {
+//     transform: rotateY(360deg);
+//   }
+// }
+
+.bg-primary-30 {
+  background-color: rgba($primary, 0.3);
+}
+.bg-secondary-30 {
+  background-color: rgba($secondary, 0.3);
+}
+.bg-danger-30 {
+  background-color: rgba($danger, 0.3);
+}
+.bg-warning-30 {
+  background-color: rgba($warning, 0.3);
+}

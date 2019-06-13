@@ -80,4 +80,20 @@
   color: #c99630;
   overflow: hidden;
 }
+
+.bg-primary-30 {
+  background-color: rgba(134, 191, 78, 0.3);
+}
+
+.bg-secondary-30 {
+  background-color: rgba(135, 78, 191, 0.3);
+}
+
+.bg-danger-30 {
+  background-color: rgba(184, 7, 22, 0.3);
+}
+
+.bg-warning-30 {
+  background-color: rgba(201, 150, 48, 0.3);
+}
 /*# sourceMappingURL=style.css.map */

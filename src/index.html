@@ -78,7 +78,7 @@
           <h1 class="display-4">
             The Track You're Gonna Race...
           </h1>
-          <p class="lead mb-0">
+          <p class="lead d-none d-sm-block">
             Motorsport venue opened in 2004 and used for drag racing, GP2 Series
             and the annual Bahrain Grand Prix of Formula 1. This fantastic
             Bahrain Circuit is waiting for you.
@@ -138,7 +138,7 @@
           <h1 class="display-4">
             The Cars You Can Choose...
           </h1>
-          <p class="lead mb-0">
+          <p class="lead">
             From Lamborghini Gallardo to Renault R.S.17. We have a vast
             collection of more than ordinary sport cars.
           </p>
@@ -179,7 +179,7 @@
             </div>
           </div>
           <div class="col-md-5 col-lg-4 mb-2">
-            <div class="card bg-light text-dark my-3">
+            <div id="carCard" class="card bg-light text-dark my-3">
               <div class="card-header bg-primary">
                 <h5
                   class="card-title text-white text-center font-weight-bold my-2"
@@ -219,27 +219,153 @@
       </div>
     </section>
 
-    <section id="testimonials" class="pb-5 bg-light">
+    <section id="offer" class="pb-5 bg-light">
+      <div class="bg-danger py-5 text-center text-white">
+        <div class="container">
+          <h1 class="display-4">
+            Find The Experience That Suits You Most... 
+          </h1>
+          <p class="lead">
+            We have multiple plans so everyone will find something for themselves.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-9 mx-auto">
+            <div id="offerAccordion">
+              <div class="card">
+                <div class="card-header p-0">
+                  <button class="btn btn-block bg-primary py-3" data-toggle="collapse" data-target="#collapsePlan1">
+                    <span class="h3 text-white">
+                      Driving Experience
+                    </span>
+                </button>
+                </div>
+                <div id="collapsePlan1" class="collapse show" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 class="mb-1">DRIVE ONE OF OUR CARS</h5>
+                      <small class="text-muted">F1 car is a special double-sitter and unfortunately you cannot drive it on you own!</small>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Admission fee: $399. – per person, VAT included</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> The Driving Experience is a full-day programme</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> It is possible to record your sessions with an on-board camera</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Lunch included</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer bg-primary-30 text-right">
+                    <a href="#" class="btn btn-primary btn-lg text-white">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0">
+                  <button class="btn btn-block bg-secondary py-3" data-toggle="collapse" data-target="#collapsePlan2">
+                    <span class="h3 text-white">
+                      Passenger Experience
+                    </span>
+                </button>
+                </div>
+                <div id="collapsePlan2" class="collapse" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 class="mb-3">EXPERIENCE THE G-FORCES OF A RACING CAR</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Admission fee: $99. – per person, VAT included</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Subject to change in price and programme</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Minimum age 12 years and minimum height 1.40m</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer bg-secondary-30 text-right">
+                    <a href="#" class="btn btn-secondary btn-lg">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0">
+                  <button class="btn btn-block bg-danger py-3" data-toggle="collapse" data-target="#collapsePlan3">
+                    <span class="h3 text-white">
+                      Super Experience
+                    </span>
+                </button>
+                </div>
+                <div id="collapsePlan3" class="collapse" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 class="mb-3">PARTICIPATE IN A REAL WHEEL-TO-WHEEL COMPETITION</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Admission fee: $599. – per person, VAT included</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> The Super Experience is a full-day programme</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> I addition to normal Driving Experience you will attend a small qualification session and race with other participants</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> It is possible to record your sessions with an on-board camera</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Lunch included</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer bg-danger-30 text-right">
+                    <a href="#" class="btn btn-danger btn-lg">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0">
+                  <button class="btn btn-block bg-warning py-3" data-toggle="collapse" data-target="#collapsePlan4">
+                    <span class="h3 text-white">
+                      Gold Experience
+                    </span>
+                </button>
+                </div>
+                <div id="collapsePlan4" class="collapse" data-parent="#offerAccordion">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5 class="mb-3">TRY ALL OF OUR CARS</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Admission fee: $1299. – per person, VAT
+                        included</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> The Gold Experience is a two-days
+                        programme</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> You can try out all of our cars and you will be trained for the race by ex-formula 1 drivers!</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> It is possible to record your sessions
+                        with an on-board camera</li>
+                      <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Lunch included</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer bg-warning-30 text-right">
+                    <a href="#" class="btn btn-warning btn-lg text-white">Inquire Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="pb-5 bg-dark">
       <div class="bg-warning py-5 text-center text-white">
         <div class="container">
           <h1 class="display-4">
             Our Clients About Us...
           </h1>
           <p class="lead mb-0">
-            Check some of the opinions and feedback our clients gave us. 
+            Check some opinions and feedback from our clients. 
           </p>
         </div>
       </div>
       <div class="container">
         <div class="row mt-5">
           <div class="col-sm-6 col-lg-3 mt-5 d-flex text-center">
-            <div class="card my-3 bg-dark text-white">
+            <div class="card my-3">
               <div class="card-header bg-primary">
                 <img src="img/person1.jpg" alt="Some Client" class="img-fluid rounded-circle testimonial-image">
               </div>
-              <div class="card-body">
+              <div class="card-body bg-light text-dark">
                 <h3>Amanda Pett</h3>
-                <h6>Passenger-experiece</h6>
+                <h6 class="text-muted">Passenger-experiece</h6>
                 <p class="my-3">This F1 Renault is a monster. I wish we could drive it instead of sitting at the back. Nevertheless it was an amazin experience.</p>
               </div>
               <div class="card-footer bg-secondary">
@@ -264,13 +390,13 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 mt-5 d-flex text-center">
-            <div class="card my-3 bg-dark text-white">
+            <div class="card my-3">
               <div class="card-header bg-primary">
                 <img src="img/person2.jpg" alt="Some Client" class="img-fluid rounded-circle testimonial-image">
               </div>
               <div class="card-body">
                 <h3>Brad Smith</h3>
-                <h6>Driving-experiece</h6>
+                <h6 class="text-muted">Driving-experiece</h6>
                 <p class="my-3">Never in my life I would imagine driving LaFerrari. Thanks to my friends I did it on my birthday.</p>
               </div>
               <div class="card-footer bg-secondary">
@@ -295,13 +421,13 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 mt-5 d-flex text-center">
-            <div class="card my-3 bg-dark text-white">
+            <div class="card my-3">
               <div class="card-header bg-primary">
                 <img src="img/person3.jpg" alt="Some Client" class="img-fluid rounded-circle testimonial-image">
               </div>
               <div class="card-body">
                 <h3>Kevin Spacey</h3>
-                <h6>Driving-experiece</h6>
+                <h6 class="text-muted">Driving-experiece</h6>
                 <p class="my-3">Garish, aggressive, stylish and agile - the Lamborghini is a true supercar. It was an unforgetable experience.</p>
               </div>
               <div class="card-footer bg-secondary">
@@ -326,13 +452,13 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-3 mt-5 d-flex text-center">
-            <div class="card my-3 bg-dark text-white">
+            <div class="card my-3">
               <div class="card-header bg-primary">
                 <img src="img/person4.jpg" alt="Some Client" class="img-fluid rounded-circle testimonial-image">
               </div>
               <div class="card-body">
                 <h3>Sara Johnes</h3>
-                <h6>Driving-experiece</h6>
+                <h6 class="text-muted">Driving-experiece</h6>
                 <p class="my-3">I'm a proffessional racer and visit this track every month. But it never gets boring and all of the cars they have in offer are just fantastic!</p>
               </div>
               <div class="card-footer bg-secondary">
@@ -361,7 +487,7 @@
     </section>
 
     <section id="contact" class="pb-5 bg-light">
-      <div class="bg-danger py-5 text-center text-white">
+      <div class="bg-primary py-5 text-center text-white">
         <div class="container">
           <h1 class="display-4">
             Contact Us
@@ -369,7 +495,7 @@
           <p class="lead">
             If you want to learn more just call us or use the form below.
           </p>
-          <p class="h1"><i class="fas fa-phone"></i> (567) 865 505</p>
+          <p class="h1"><i class="fas fa-phone-volume align-middle"></i> (567) 865 505</p>
         </div>
       </div>
       <div class="container">
@@ -378,7 +504,7 @@
             <form>
               <div class="input-group input-group-lg mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text text-danger">
+                  <span class="input-group-text text-secondary">
                     <i class="fas fa-user"></i>
                   </span>
                 </div>
@@ -386,7 +512,7 @@
               </div>
               <div class="input-group input-group-lg mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text text-danger">
+                  <span class="input-group-text text-secondary">
                     <i class="fas fa-envelope"></i>
                   </span>
                 </div>
@@ -394,7 +520,7 @@
               </div>
               <div class="input-group input-group-lg mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text text-danger">
+                  <span class="input-group-text text-secondary">
                     <i class="fas fa-pencil-alt"></i>
                   </span>
                 </div>
@@ -405,7 +531,7 @@
                 ></textarea>
               </div>
               <input
-                class="btn btn-danger btn-block btn-lg"
+                class="btn btn-secondary btn-block btn-lg"
                 type="submit"
                 value="Submit"
               />
@@ -442,6 +568,16 @@
       $("#mainCarousel").carousel({
         pause: "hover"
       });
+
+      $('#mainCarousel').on('slide.bs.carousel', function(e){
+        if (e.direction === "left"){
+        console.log("slide left");
+        } else if (e.direction === "right"){
+          console.log('slide right');
+          
+        }
+      })
+
 
       $("#currentYear").text(new Date().getFullYear());
     </script>
