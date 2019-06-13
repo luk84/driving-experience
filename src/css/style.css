@@ -6,6 +6,22 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.bg-primary-30 {
+  background-color: rgba(134, 191, 78, 0.3);
+}
+
+.bg-secondary-30 {
+  background-color: rgba(135, 78, 191, 0.3);
+}
+
+.bg-danger-30 {
+  background-color: rgba(184, 7, 22, 0.3);
+}
+
+.bg-warning-30 {
+  background-color: rgba(201, 150, 48, 0.3);
+}
+
 .navbar {
   border-width: 3px !important;
 }
@@ -16,7 +32,7 @@
   transition: 0.3s linear;
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link.active, .navbar .nav-link:hover {
   color: #874ebf !important;
 }
 
@@ -44,6 +60,10 @@
   z-index: -1;
 }
 
+.specs {
+  background-color: var(--dark);
+}
+
 .testimonial-image {
   margin-top: -4.5rem !important;
 }
@@ -61,7 +81,7 @@
           justify-content: center;
 }
 
-.back-stars {
+.star-rating .back-stars {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,7 +90,7 @@
   color: var(--dark);
 }
 
-.front-stars {
+.star-rating .front-stars {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,21 +99,5 @@
   display: flex;
   color: #c99630;
   overflow: hidden;
-}
-
-.bg-primary-30 {
-  background-color: rgba(134, 191, 78, 0.3);
-}
-
-.bg-secondary-30 {
-  background-color: rgba(135, 78, 191, 0.3);
-}
-
-.bg-danger-30 {
-  background-color: rgba(184, 7, 22, 0.3);
-}
-
-.bg-warning-30 {
-  background-color: rgba(201, 150, 48, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

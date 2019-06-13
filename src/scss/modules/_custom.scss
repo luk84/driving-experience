@@ -8,6 +8,19 @@
   }
 }
 
+.bg-primary-30 {
+  background-color: rgba($primary, 0.3);
+}
+.bg-secondary-30 {
+  background-color: rgba($secondary, 0.3);
+}
+.bg-danger-30 {
+  background-color: rgba($danger, 0.3);
+}
+.bg-warning-30 {
+  background-color: rgba($warning, 0.3);
+}
+
 .navbar {
   border-width: 3px !important;
 
@@ -15,6 +28,7 @@
     color: #fff !important;
     transition: 0.3s linear;
 
+    &.active,
     &:hover {
       color: $secondary !important;
     }
@@ -43,6 +57,10 @@
   }
 }
 
+.specs {
+  background-color: var(--dark);
+}
+
 .testimonial-image {
   margin-top: -4.5rem !important;
 }
@@ -52,39 +70,20 @@
   align-items: center;
   font-size: 1em;
   justify-content: center;
-}
-.back-stars {
-  position: relative;
-  display: flex;
-  margin: 0.5rem;
-  color: var(--dark);
-}
-.front-stars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  color: $warning;
-  overflow: hidden;
-}
 
-// #carCard {
-//   transition: 2s;
+  .back-stars {
+    position: relative;
+    display: flex;
+    margin: 0.5rem;
+    color: var(--dark);
+  }
 
-//   &.active {
-//     transform: rotateY(360deg);
-//   }
-// }
-
-.bg-primary-30 {
-  background-color: rgba($primary, 0.3);
-}
-.bg-secondary-30 {
-  background-color: rgba($secondary, 0.3);
-}
-.bg-danger-30 {
-  background-color: rgba($danger, 0.3);
-}
-.bg-warning-30 {
-  background-color: rgba($warning, 0.3);
+  .front-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    color: $warning;
+    overflow: hidden;
+  }
 }

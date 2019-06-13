@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/9a868281b3.js"></script>
   </head>
-  <body id="home">
+  <body id="home" data-spy="scroll" data-target="#mainNav">
     <nav
-      class="navbar navbar-expand-md navbar-dark bg-black-80 border-bottom border-primary fixed-top"
+      id="mainNav" class="navbar navbar-expand-md navbar-dark bg-black-80 border-bottom border-primary fixed-top"
     >
       <div class="container">
-        <a href="index.html" class="navbar-brand">
+        <a href="#home" class="navbar-brand">
           <h4 class="m-0 font-weight-bold">
             <span class="text-primary">RACE</span
             ><span class="text-secondary">planet</span>
@@ -179,39 +179,136 @@
             </div>
           </div>
           <div class="col-md-5 col-lg-4 mb-2">
-            <div id="carCard" class="card bg-light text-dark my-3">
-              <div class="card-header bg-primary">
-                <h5
-                  class="card-title text-white text-center font-weight-bold my-2"
-                >
-                  Lamborghini Gallardo
-                </h5>
+            <div class="card-container">
+              <div class="card car-card bg-light text-dark font-weight-bold my-3 collapse show">
+                <div class="card-header bg-primary">
+                  <h5
+                    class="card-title text-white text-center font-weight-bold my-2"
+                  >
+                    Lamborghini Gallardo
+                  </h5>
+                </div>
+                <img
+                  src="img/lamborghini-logo.png"
+                  alt="Lamborghini Logo"
+                  class="w-25 mx-auto mt-3"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Best selling car in the history of Italian manufacturer.
+                  </p>
+                  <div class="specs text-white p-3 rounded">
+                    <h6 class="font-weight-bold">Max Power</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar" role="progressbar" style="width: 60%;">552hp</div>
+                    </div>
+                    <h6 class="font-weight-bold">Acceleration 0 to 100 km/h</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar" role="progressbar" style="width: 70%;">3.7s</div>
+                    </div>
+                    <h6 class="font-weight-bold">Top Speed</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar" role="progressbar" style="width: 90%;">325km/h</div>
+                    </div>
+                    <h6 class="font-weight-bold">Weight</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar" role="progressbar" style="width: 60%;">1 591kg</div>
+                    </div>
+                  </div> 
+                </div>
               </div>
-              <img
-                src="img/lamborghini-logo.png"
-                alt="Lamborghini Logo"
-                class="w-25 mx-auto mt-3"
-              />
-              <div class="card-body">
-                <p class="card-text text-center">
-                  Best selling car in the history of Italian manufacturer.
-                </p>
-                <ul class="list-group text-white">
-                  <li class="list-group-item bg-dark border-gray">
-                    <span class="font-weight-bold">Location:</span> Sakhir,
-                    Bahrain
-                  </li>
-                  <li class="list-group-item bg-dark border-gray">
-                    <span class="font-weight-bold">Capacity:</span> 70 000
-                  </li>
-                  <li class="list-group-item bg-dark border-gray">
-                    <span class="font-weight-bold">Length:</span> 5.412 km
-                  </li>
-                  <li class="list-group-item bg-dark border-gray">
-                    <span class="font-weight-bold">Race lap record:</span>
-                    1:30.252 (Germany Michael Schumacher, Ferrari, 2004)
-                  </li>
-                </ul>
+              <div class="card car-card bg-light text-dark font-weight-bold my-3 collapse">
+                <div class="card-header bg-secondary">
+                  <h5 class="card-title text-white text-center font-weight-bold my-2">
+                    BMW-i8
+                  </h5>
+                </div>
+                <img src="img/bmw-logo.png" alt="BMW Logo" class="w-25 mx-auto mt-3" />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    It may have the lowest specs of our cars but it's still hell of a ride!
+                  </p>
+                  <div class="specs text-white p-3 rounded">
+                    <h6 class="font-weight-bold">Max Power</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;">369hp</div>
+                    </div>
+                    <h6 class="font-weight-bold">Acceleration 0 to 100 km/h</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 63%;">4.4s</div>
+                    </div>
+                    <h6 class="font-weight-bold">Top Speed</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 70%;">250km/h</div>
+                    </div>
+                    <h6 class="font-weight-bold">Weight</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 65%;">1 485kg</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card car-card bg-light text-dark font-weight-bold my-3 collapse">
+                <div class="card-header bg-warning">
+                  <h5 class="card-title text-white text-center font-weight-bold my-2">
+                    Renault F1 R.S.17
+                  </h5>
+                </div>
+                <img src="img/renault-logo.png" alt="Renault Logo" class="w-25 mx-auto mt-3" />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Real F1 car. A double-seater version (only Passenger Experience available).
+                  </p>
+                  <div class="specs text-white p-3 rounded">
+                    <h6 class="font-weight-bold">Max Power</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%;">1100hp</div>
+                    </div>
+                    <h6 class="font-weight-bold">Acceleration 0 to 100 km/h</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%;">2.4s</div>
+                    </div>
+                    <h6 class="font-weight-bold">Top Speed</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%;">351km/h</div>
+                    </div>
+                    <h6 class="font-weight-bold">Weight</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%;">728kg</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card car-card bg-light text-dark font-weight-bold my-3 collapse">
+                <div class="card-header bg-danger">
+                  <h5 class="card-title text-white text-center font-weight-bold my-2">
+                    Ferrari LaFerrari
+                  </h5>
+                </div>
+                <img src="img/ferrari-logo.png" alt="Ferrari Logo" class="w-25 mx-auto mt-3" />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Strongest option in Driving Experience. It's a real beast!
+                  </p>
+                  <div class="specs text-white p-3 rounded">
+                    <h6 class="font-weight-bold">Max Power</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 88%;">949hp</div>
+                    </div>
+                    <h6 class="font-weight-bold">Acceleration 0 to 100 km/h</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;">2.6s</div>
+                    </div>
+                    <h6 class="font-weight-bold">Top Speed</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 99%;">350km/h</div>
+                    </div>
+                    <h6 class="font-weight-bold">Weight</h6>
+                    <div class="progress mb-2" style="height: 20px">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;">1 255kg</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -246,7 +343,7 @@
                   <div class="card-body">
                     <div class="card-title">
                       <h5 class="mb-1">DRIVE ONE OF OUR CARS</h5>
-                      <small class="text-muted">F1 car is a special double-sitter and unfortunately you cannot drive it on you own!</small>
+                      <small class="text-muted">F1 car is a special double-seater and unfortunately you cannot drive it on you own!</small>
                     </div>
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item bg-transparent"><i class="fas fa-arrow-right"></i> Admission fee: $399. – per person, VAT included</li>
@@ -563,23 +660,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      $("#mainCarousel").carousel({
-        pause: "hover"
-      });
-
-      $('#mainCarousel').on('slide.bs.carousel', function(e){
-        if (e.direction === "left"){
-        console.log("slide left");
-        } else if (e.direction === "right"){
-          console.log('slide right');
-          
-        }
-      })
-
-
-      $("#currentYear").text(new Date().getFullYear());
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
