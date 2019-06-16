@@ -1,5 +1,24 @@
 @import "bootstrap-variables";
 
+.pt-sm-5 {
+  @media (min-width: 576px) {
+    padding-top: 3rem;
+  }
+}
+
+.pb-sm-5 {
+  @media (min-width: 576px) {
+    padding-bottom: 3rem;
+  }
+}
+
+.py-sm-5 {
+  @media (min-width: 576px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
 .bg-black {
   background-color: #000;
 
