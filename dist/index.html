@@ -64,11 +64,11 @@
             </a>
           </div>
           <div class="col-md-6">
-            <img
-              src="img/lamborghini.png"
-              class="d-block img-fluid"
-              alt="Lamborghini"
-            />
+            <img srcset="img/lamborghini-360w.png 360w,
+                         img/lamborghini.png 640w"
+                 sizes="(max-width: 360px) 314px,
+                 640px"
+                 src="img/lamborghini.png" class="d-block img-fluid" alt="Lamborghini Gallardo">
           </div>
         </div>
       </div>
@@ -97,7 +97,11 @@
                   Bahrain International Circuit
                 </h5>
               </div>
-              <img src="img/circuit-bg.jpg" alt="Racing Track - Card Image" class="card-img-bottom" />
+              <img srcset="img/circuit-bg-800w.jpg 800w,
+                           img/circuit-bg.jpg 1600w"
+                   sizes="(max-width: 991px) 510px,
+                           1600px"
+                   src="img/circuit-bg.jpg" alt="Racing Track - Card Image" class="img-fluid">
               <div class="card-body">
                 <p class="card-text d-none d-sm-block">
                   The first Bahrain Grand Prix took place on 4 April 2004,
@@ -158,16 +162,32 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="img-fluid" src="img/lamborghini.png" alt="Lamborghini Gallardo" />
+                  <img srcset="img/lamborghini-360w.png 360w,
+                              img/lamborghini.png 640w"
+                      sizes="(max-width: 360px) 330px,
+                              640px"
+                      src="img/lamborghini.png" class="img-fluid" alt="Lamborghini Gallardo">
                 </div>
                 <div class="carousel-item">
-                  <img class="img-fluid" src="img/bmw-i8.png" alt="BMW i8" />
+                  <img srcset="img/bmw-i8-360w.png 360w,
+                              img/bmw-i8.png 640w"
+                      sizes="(max-width: 360px) 330px,
+                              992px"
+                      src="img/bmw-i8.png" class="img-fluid" alt="BMW i8">
                 </div>
                 <div class="carousel-item">
-                  <img class="img-fluid" src="img/renault-f1.png" alt="Renault R.S.17 F1 Car" />
+                  <img srcset="img/renault-f1-360w.png 360w,
+                              img/renault-f1.png 640w"
+                      sizes="(max-width: 360px) 330px,
+                              640px"
+                      src="img/renault-f1.png" class="img-fluid" alt="Renault R.S.17 F1 Car">
                 </div>
                 <div class="carousel-item">
-                  <img class="img-fluid" src="img/ferrari-laferrari.png" alt="Ferrari LaFerrari" />
+                  <img srcset="img/ferrari-laferrari-360w.png 360w,
+                               img/ferrari-laferrari.png 640w"
+                       sizes="(max-width: 360px) 330px,
+                            640px"
+                       src="img/ferrari-laferrari.png" class="img-fluid" alt="Ferrari LaFerrari">
                 </div>
               </div>
               <a href="#mainCarousel" class="carousel-control-prev" role="button" data-slide="prev">
@@ -190,11 +210,14 @@
                     Lamborghini Gallardo
                   </h5>
                 </div>
-                <img
-                  src="img/lamborghini-logo.png"
-                  alt="Lamborghini Logo"
-                  class="w-25 mx-auto mt-3 d-none d-sm-block"
-                />
+                <picture>
+                  <source srcset="img/lamborghini-logo.png" media="(min-width: 576px)">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="Lamborghini Logo"
+                    class="w-25 mx-auto mt-3 d-none d-sm-block"
+                  />
+                </picture>
                 <div class="card-body">
                   <p class="card-text text-center">
                     Best selling car in the history of Italian manufacturer.
@@ -225,7 +248,10 @@
                     BMW-i8
                   </h5>
                 </div>
-                <img src="img/bmw-logo.png" alt="BMW Logo" class="w-25 mx-auto mt-3 d-none d-sm-block" />
+                <picture>
+                  <source srcset="img/bmw-logo.png" media="(min-width: 576px)">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="BMW Logo" class="w-25 mx-auto mt-3 d-none d-sm-block" />
+                </picture>
                 <div class="card-body">
                   <p class="card-text text-center">
                     It may have the lowest specs of our cars but it's still hell of a ride!
@@ -256,7 +282,10 @@
                     Renault F1 R.S.17
                   </h5>
                 </div>
-                <img src="img/renault-logo.png" alt="Renault Logo" class="w-25 mx-auto mt-3 d-none d-sm-block" />
+                <picture>
+                  <source srcset="img/renault-logo.png" media="(min-width: 576px)">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Renault Logo" class="w-25 mx-auto mt-3 d-none d-sm-block" />
+                </picture>
                 <div class="card-body">
                   <p class="card-text text-center">
                     Real F1 car. A double-seater version (only Passenger Experience available).
@@ -287,7 +316,10 @@
                     Ferrari LaFerrari
                   </h5>
                 </div>
-                <img src="img/ferrari-logo.png" alt="Ferrari Logo" class="w-25 mx-auto mt-3 d-none d-sm-block" />
+                <picture>
+                  <source srcset="img/ferrari-logo.png" media="(min-width: 576px)">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Ferrari Logo" class="w-25 mx-auto mt-3 d-none d-sm-block" />
+                </picture>
                 <div class="card-body">
                   <p class="card-text text-center">
                     Strongest option in Driving Experience. It's a real beast!
